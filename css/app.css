@@ -1,10 +1,11 @@
 html {
     box-sizing: border-box;
     font-size: 100%;
+    background-color: antiquewhite;
 }
 
 body {
-    font-family: "Kode Mono", "Anta";
+    font-family: "PT Sans", "Anta";
 }
 
 h1 {
@@ -51,21 +52,43 @@ h1 {
 }
 
 .imagen-presentacion {
-    width: 50%;
+    width: 30%;
     margin-right: 1rem;
 }
 
 .texto-presentacion {
-    width: 50%;
+    width: 75%;
 }
 
 .texto-presentacion h2 {
     color: #CB6A73;
     font-family: "Anta";
+    font-size: 2rem;
 }
 
-.texto-presentacion p {
-    line-height: 1.6;
+.texto-presentacion p{
+    font-size: 1.5rem;
+}
+
+.copyright{
+    color: #555555;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+
+.footer{
+    color: black;
+    padding: 2rem 0;
+    text-align: center;
+}
+.grid-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-footer h3{
+    margin: 0;
 }
 
 @media (max-width: 768px) {
