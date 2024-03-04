@@ -1,7 +1,8 @@
+/*General*/
 html {
     box-sizing: border-box;
     font-size: 100%;
-    background-color: antiquewhite;
+    background-color: #FDE5CD;
 }
 
 body {
@@ -45,6 +46,7 @@ h1 {
     background-color: #81D8F8;
 }
 
+/*Elementos propios página principal*/
 .presentacion {
     display: flex;
     align-items: center;
@@ -66,33 +68,51 @@ h1 {
     font-size: 2rem;
 }
 
-.texto-presentacion p{
+.texto-presentacion p {
+    font-size: 1.5rem;
+}
+.historia {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0;
+}
+.texto-historia {
+    width: 100%;
+}
+
+.texto-historia h2 {
+    color: #CB6A73;
+    font-family: "Anta";
+    font-size: 2rem;
+}
+
+.texto-historia p {
     font-size: 1.5rem;
 }
 
-.copyright{
+/*Footer*/
+.grid-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-footer h3 {
+    margin: 0;
+}
+
+.copyright {
     color: #555555;
     font-size: 0.7rem;
     text-align: left;
 }
 
-
-.footer{
-    color: black;
-    padding: 2rem 0;
-    text-align: center;
-}
-.grid-footer{
-    display: flex;
-    justify-content: space-around;
-}
-
-.grid-footer h3{
-    margin: 0;
-}
-
+/*Responsive*/
 @media (max-width: 768px) {
-
     .nombre-sitio {
         padding: 0.5rem;
     }
@@ -120,4 +140,9 @@ h1 {
     .presentacion {
         flex-direction: column;
     }
+    .grid-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
