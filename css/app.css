@@ -71,11 +71,13 @@ h1 {
 .texto-presentacion p {
     font-size: 1.5rem;
 }
+
 .historia {
     display: flex;
     align-items: center;
     padding: 0.3rem 0;
 }
+
 .texto-historia {
     width: 100%;
 }
@@ -94,6 +96,8 @@ h1 {
 .grid-footer {
     display: flex;
     justify-content: space-around;
+    background-color: #97979771;
+    padding: 1rem 0rem 1rem 0rem;
 }
 
 #navegacion {
@@ -140,9 +144,15 @@ h1 {
     .presentacion {
         flex-direction: column;
     }
+
     .grid-footer {
         display: flex;
         flex-direction: column;
+        align-items: left;
+        padding: 1rem 1rem 1rem 7rem;
     }
-
+    .grid-footer h3{
+        margin: 0.5rem 0;
+        font-size: 1.8rem;
+    }
 }
