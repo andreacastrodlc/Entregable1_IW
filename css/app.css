@@ -21,7 +21,6 @@ h1 {
     background-image: url(../img/top1.jpg);
     background-size: cover;
     background-position: center;
-    padding: 0.5rem;
     font-family: "Anta";
 }
 
@@ -50,12 +49,11 @@ h1 {
 .presentacion {
     display: flex;
     align-items: center;
-    padding: 0.3rem 0;
+    margin: 2%;
 }
 
 .imagen-presentacion {
-    width: 30%;
-    margin-right: 1rem;
+    width: 20%;
 }
 
 .texto-presentacion {
@@ -65,30 +63,68 @@ h1 {
 .texto-presentacion h2 {
     color: #CB6A73;
     font-family: "Anta";
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .texto-presentacion p {
-    font-size: 1.5rem;
-}
-
-.historia {
-    display: flex;
-    align-items: center;
-    padding: 0.3rem 0;
-}
-
-.texto-historia {
-    width: 100%;
-}
-
-.texto-historia h2 {
-    color: #CB6A73;
-    font-family: "Anta";
     font-size: 2rem;
 }
 
-.texto-historia p {
+.nuestros_principios {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.texto-principios {
+    width: 100%;
+    text-align: center;
+}
+
+.imagen-principios {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.texto-principios h2 {
+    color: #CB6A73;
+    font-family: "Anta";
+    font-size: 2.5rem;
+}
+
+.texto-principios p {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.objetivos {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+}
+
+.texto-objetivos {
+    width: 100%;
+}
+
+.texto-objetivos h2 {
+    color: #CB6A73;
+    font-family: "Anta";
+    font-size: 2.5rem;
+}
+
+.texto-objetivos p {
+    font-size: 1.5rem;
+}
+
+.texto-productos h2 {
+    color: #CB6A73;
+    font-family: "Anta";
+    font-size: 2.5rem;
+}
+.texto-productos p{
     font-size: 1.5rem;
 }
 
@@ -114,6 +150,7 @@ h1 {
     font-size: 0.7rem;
     text-align: left;
 }
+
 
 /*Responsive*/
 @media (max-width: 768px) {
