@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregable1</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="nombre-sitio">Stooping Gasteiz</h1>
+    </header>
+    <div class="menu-superior">
+        <nav class="contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="otras_iniciativas.html">Otras Iniciativas</a>
+        </nav>
+    </div>
+
+    <section class="formulario-reserva">
+        <h2>Reserva de recogida de productos</h2>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto" required>
+                <option value="">Selecciona un producto</option>
+                <option value="producto1">Recibidor vintage</option>
+                <option value="producto2">Mesa auxiliar</option>
+                <option value="producto3">Zapatero</option>
+            </select>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <label for="sexo"><strong>Sexo:</strong></label>
+            <label for="sexo-hombre">Hombre</label>
+            <input type="radio" id="sexo-hombre" name="sexo" value="hombre" required>
+            <label for="sexo-mujer">Mujer</label>
+            <input type="radio" id="sexo-mujer" name="sexo" value="mujer" required>
+            <label for="sexo-otro">Otro</label>
+            <input type="radio" id="sexo-otro" name="sexo" value="otro" required>
+
+
+            <label for="voluntariado"><strong>¿Te gustaría trabajar voluntariamente con nosotros?</strong></label>
+            <label for="voluntariado">Manteniendo redes sociales</label>
+            <input type="checkbox" id="redes-sociales" value="1">
+            <label for="voluntariado">Manteniendo la página web</label>
+            <input type="checkbox" id="página-web" value="1">
+            <label for="voluntariado">Organizando talleres</label>
+            <input type="checkbox" id="talleres" value="1">
+
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="10" cols="40"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="grid-footer">
+            <div>
+                <h3>Colabora con nosotros</h3>
+                <nav id="navegacion">
+                    <a href="#">Donaciones</a>
+                    <a href="#">Ideas</a>
+                    <a href="#">Voluntariado</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <nav id="navegacion">
+                    <a>Tlfno. 683249982</a>
+                    <a href="">stoopingasteiz@gmail.com</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Nuestras redes sociales</h3>
+                <nav id="navegacion">
+                    <a href="https://www.instagram.com/stooping_vitoriagasteiz/?hl=es">Instagram</a>
+                    <a href="https://twitter.com">X</a>
+                    <a href="https://www.facebook.com">Facebook</a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados, Stooping Gasteiz</p>
+    </footer>
+
+</body>
+
+</html>
