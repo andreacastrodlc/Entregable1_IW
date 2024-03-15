@@ -67,7 +67,7 @@ h1 {
 }
 
 .texto-presentacion p {
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 .nuestros_principios {
@@ -95,7 +95,7 @@ h1 {
 }
 
 .texto-principios p {
-    font-size: 2rem;
+    font-size: 1.4rem;
     text-align: left;
 }
 
@@ -116,9 +116,37 @@ h1 {
 }
 
 .texto-objetivos p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
+.tabla-resumen {
+    width: 30%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.tabla-resumen caption {
+    padding: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.tabla-resumen th, .tabla-resumen td {
+    width: 33.33%;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-resumen th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+/*Elementos propios página productos*/
+.Productos{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 .texto-productos h2 {
     color: #CB6A73;
     font-family: "Anta";
@@ -127,6 +155,261 @@ h1 {
 .texto-productos p{
     font-size: 1.5rem;
 }
+
+.texto-productos h2,
+.productos-recogida h2,
+.productos-encontrados h2 {
+    font-size: 2.5rem; 
+    color: #CB6A73;
+    font-family: "Anta";
+}
+
+.productos-recogida {
+    position: relative;
+}
+
+.productos-recogida h2 {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: #f1f1f1;
+    text-align: center;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.productos-recogida .producto1,
+.productos-recogida .producto2,
+.productos-recogida .producto3 {
+    margin-top: 8rem;
+    margin-right: 0;
+}
+.productos-recogida {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.productos-recogida img {
+    width: 100%; 
+    height: fit-content;
+}
+.producto1 {
+    flex: 0 0 calc(30% - 20px); 
+    margin-right: 20px; 
+    text-align: center; 
+}
+.producto2 {
+    flex: 0 0 calc(30% - 20px);
+    margin-right: 20px; 
+    text-align: center; 
+}.producto3 {
+    flex: 0 0 calc(30% - 20px); 
+    margin-right: 20px;
+    text-align: center; 
+}
+
+
+.producto h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem; 
+}
+
+.producto p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem; 
+}
+
+.Productos button {
+    background-color: #81D8F8;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.Productos button:hover {
+    background-color: #204250;
+}
+
+.productos-encontrados {
+    position: relative;
+}
+
+.productos-encontrados h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    text-align: center;
+    z-index: 1;
+}
+
+.productos-encontrados .producto4,
+.productos-encontrados .producto5,
+.productos-encontrados .producto6 {
+    margin-top: 8rem;
+}
+.productos-encontrados {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 2rem; 
+}
+
+.productos-encontrados img {
+    width: 100%; 
+    height: 400px;
+    object-fit: cover;
+}
+
+.productos-encontrados h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem; 
+}
+
+.productos-encontrados p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.productos-encontrados .producto4,
+.productos-encontrados .producto5,
+.productos-encontrados .producto6 {
+    background-color: #ffffff; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*Elementos propios página otras iniciativas*/
+.talleres{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.talleres h2{
+    font-family: "Anta";
+    color: #CB6A73;
+    font-size: 3rem;
+}
+.talleres p{
+    font-size: 1.4rem;
+}
+.taller1,
+.taller2 {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.taller1 h3,
+.taller2 h3 {
+  font-family: 'Anta', cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+color: #CB6A73;
+}
+
+.taller1 p,
+.taller2 p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.contenedor-talleres {
+    display: grid;
+  }
+.taller1 img,
+.taller2 img {
+  float: left;
+  margin-right: 2rem;
+  width: 40%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.taller1 form,
+.taller2 form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.taller1 label,
+.taller2 label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.taller1 input[type="text"],
+.taller1 input[type="email"],
+.taller1 input[type="datetime-local"],
+.taller2 input[type="text"],
+.taller2 input[type="email"],
+.taller2 input[type="datetime-local"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.taller1 button[type="submit"],
+.taller2 button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.taller1 button[type="submit"]:hover,
+.taller2 button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.texto-actividades {
+    grid-column: span 2;
+    padding: 1rem;
+  }
+  
+.actividades-grupales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+    
+  .texto-actividades h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #CB6A73;
+  }
+  
+  .texto-actividades p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .actividad1 {
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+  }
+  
+  .actividad1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .actividad1 h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .actividad1 p {
+    margin-bottom: 1rem;
+  }
 
 /*Footer*/
 .grid-footer {
